@@ -318,6 +318,10 @@ fi
 if [ "$phpfpm"  = 'yes' ]; then
     echo '   - PHP-FPM Application Server'
 fi
+if [ "$multiphp"  = 'yes' ]; then
+    phpfpm='yes'
+    echo '   - Multi-PHP Environment'
+fi
 
 # DNS stack
 if [ "$named" = 'yes' ]; then
