@@ -19,9 +19,9 @@ codename="$(lsb_release -s -c)"
 vestacp="$VESTA/install/$VERSION/$release"
 
 # Define software versions
-multiphp_v=("5.6" "7.0" "7.1" "7.2" "7.3" "7.4" "8.0")
-fpm_v="7.4"
-mariadb_v="10.5"
+# multiphp_v=("5.6" "7.0" "7.1" "7.2" "7.3" "7.4" "8.0")
+# fpm_v="7.4"
+# mariadb_v="10.5"
 
 # Defining software pack for all distros
 software="nginx apache2 apache2.2-common apache2-suexec-custom apache2-utils
@@ -318,10 +318,10 @@ fi
 if [ "$phpfpm"  = 'yes' ]; then
     echo '   - PHP-FPM Application Server'
 fi
-if [ "$multiphp"  = 'yes' ]; then
-    phpfpm='yes'
-    echo '   - Multi-PHP Environment'
-fi
+# if [ "$multiphp"  = 'yes' ]; then
+#    phpfpm='yes'
+#    echo '   - Multi-PHP Environment'
+# fi
 
 # DNS stack
 if [ "$named" = 'yes' ]; then
